@@ -125,15 +125,6 @@ cmake ..
 make
 ```
 
-## 👥 Team
-
-- **B24ME1002**: Aarushi Singh
-- **B24ME1040**: Krishna Mishra
-- **B24EE1050**: Palak Mishra
-- **B24EE1080**: Tanishka Trivedi
-
----
-
 ## 🎉 Ready to Get Started?
 
 ```bash
