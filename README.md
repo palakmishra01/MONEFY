@@ -17,7 +17,6 @@
 9. [Data Management](#data-management)
 10. [Troubleshooting](#troubleshooting)
 11. [Future Enhancements](#future-enhancements)
-12. [Team](#team)
 
 ---
 
