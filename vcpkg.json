@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+  "name": "monefy",
+  "version": "2.0.0",
+  "description": "Personal Transaction Tracker with Currency Conversion",
+  "dependencies": [
+    "curl",
+    {
+      "name": "curl",
+      "features": ["ssl"]
+    }
+  ],
+  "builtin-baseline": "master"
+}

@@ -5,7 +5,7 @@
 #include "transaction_manager.hpp"
 #include "currency_converter.hpp"
 
-class ChillarApp {
+class MonefyApp {
 private:
     TransactionManager* transactionManager;
     CurrencyConverter* currencyConverter;
@@ -114,7 +114,7 @@ private:
     }
 
 public:
-    ChillarApp() : baseCurrency("INR") {
+    MonefyApp() : baseCurrency("INR") {
         currencyConverter = new CurrencyConverter("");
         transactionManager = new TransactionManager("transactions.csv", currencyConverter);
         
@@ -128,7 +128,7 @@ public:
     void run() {
         std::cout << "\n";
         std::cout << "========================================\n";
-        std::cout << "    WELCOME TO CHILLAR!               \n";
+        std::cout << "    WELCOME TO MONEFY!                \n";
         std::cout << "  Your personal account manager       \n";
         std::cout << "   Now with Currency Conversion!      \n";
         std::cout << "========================================\n";
@@ -188,13 +188,8 @@ public:
                 case 10: {
                     std::cout << "\n";
                     std::cout << "========================================\n";
-                    std::cout << "Project created by:\n";
-                    std::cout << "B24ME1002: Aarushi Singh\n";
-                    std::cout << "B24ME1040: Krishna Mishra\n";
-                    std::cout << "B24EE1050: Palak Mishra\n";
-                    std::cout << "B24EE1080: Tanishka Trivedi\n";
+                    std::cout << "Thank you for using Monefy!\n";
                     std::cout << "========================================\n";
-                    std::cout << "Thank you for using CHILLAR!\n";
                     std::cout << "\n";
                     return;
                 }
@@ -205,14 +200,14 @@ public:
         }
     }
 
-    ~ChillarApp() {
+    ~MonefyApp() {
         delete transactionManager;
         delete currencyConverter;
     }
 };
 
 int main() {
-    ChillarApp app;
+    MonefyApp app;
     app.run();
     return 0;
 }

@@ -71,13 +71,13 @@ Transaction Transaction::fromCSV(const std::string& line) {
     std::stringstream ss(line);
     std::string desc, type, category, currency;
     float amount;
-    char comma;
 
-    ss >> std::getline(ss, desc, ',');
-    ss >> amount >> comma;
-    ss >> std::getline(ss, type, ',');
-    ss >> std::getline(ss, category, ',');
-    ss >> std::getline(ss, currency, ',');
+    std::getline(ss, desc, ',');
+    ss >> amount;
+    ss.ignore(); // Skip the comma
+    std::getline(ss, type, ',');
+    std::getline(ss, category, ',');
+    std::getline(ss, currency);
 
     // Handle missing currency field (for backward compatibility)
     if (currency.empty()) {
