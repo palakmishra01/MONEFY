@@ -49,23 +49,19 @@ monefy.exe
 ## Main Menu Options
 
 1. Add Transactions
-2. Display total credited/debited
-3. Find highest spending category
-4. Track Scholarships and Loans
-5. Track dues
-6. Share with Guardian
-7. Check transaction limit
-8. Currency Conversion
-9. Display all transactions
-10. Exit
+2. Display total credited and debited
+3. Find where you spent the most money
+4. Track dues
+5. Check transaction limit
+6. Exit
 
 ## Currency Features
 
-- Display 160+ available currencies
-- Set base currency (fetches live rates)
-- Convert specific transaction
-- View all in different currency
-- Convert all to target currency
+- Real-time currency conversion using REST API
+- Support for 160+ currencies worldwide
+- Add transactions in any currency
+- Automatic conversion to base currency (default: INR)
+- Live exchange rates fetched on startup
 
 ## Requirements
 

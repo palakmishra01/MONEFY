@@ -35,10 +35,7 @@ public:
     void convertTransactionCurrency(int index, const std::string& targetCurrency);
     void displayTransactionsInCurrency(const std::string& targetCurrency);
     void convertAllTransactionsTo(const std::string& targetCurrency);
-    
-    // Sharing
-    void shareTransactionHistory(const std::string& guardianName) const;
-    
+
     // Getters
     int getTransactionCount() const;
     const std::vector<Transaction>& getTransactions() const;

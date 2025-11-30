@@ -280,18 +280,6 @@ void TransactionManager::convertAllTransactionsTo(const std::string& targetCurre
     std::cout << std::endl;
 }
 
-void TransactionManager::shareTransactionHistory(const std::string& guardianName) const {
-    std::cout << std::endl;
-    std::cout << "Sharing transaction history with " << guardianName << "..." << std::endl;
-    std::cout << "================================================" << std::endl;
-
-    for (const auto& transaction : transactions) {
-        transaction.display();
-    }
-    std::cout << "================================================" << std::endl;
-    std::cout << std::endl;
-}
-
 int TransactionManager::getTransactionCount() const {
     return transactions.size();
 }
